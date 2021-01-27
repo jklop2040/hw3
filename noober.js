@@ -7,10 +7,12 @@ function pageLoad() {
   // to get started, try to write other parts of 'ride' to the JavaScript console in Chrome
   // e.g. ask 'ride' for its length or only grab the first member of the Array
   console.log(ride)
-  if (ride.length > 1 || ride[0].numberOfPassengers == 1) {levelOfService = 'Noober Pool'
+
+  if (ride[0].numberOfPassengers == 1 || ride.length > 1 ) {levelOfService = 'Noober Pool'
   } else if (ride.purplerequested = true) {levelOfService = 'Noober Purple'
-  } else if (ride.numberOfPassengers > 3) {levelOfService = 'Noober XL'
+  } else if (ride[0].numberOfPassengers > 3) {levelOfService = 'Noober XL'
   } else {levelOfService = 'Noober X'}
+
   console.log(levelOfService)
 
   if (ride.length == 1){
@@ -85,7 +87,7 @@ function pageLoad() {
     console.log(passenger2PickupAddressLine1)
     console.log(passenger2PickupAddressLine2)
     console.log(passenger2DropoffAddressLine1)
-    console.log(passenger2DropoffAddressLine2)}
+    console.log(passenger2DropoffAddressLine2)
     passenger3Name = ride[2].passengerDetails.first + ' ' + ride[2].passengerDetails.last
     passenger3Phone = ride[2].passengerDetails.phoneNumber
     passenger3NumberOfPassengers = ride[2].numberOfPassengers
@@ -101,16 +103,5 @@ function pageLoad() {
     console.log(passenger3DropoffAddressLine1)
     console.log(passenger3DropoffAddressLine2)
   }
-  // these variables map to the elements on the finished page;
-  // assign the proper value to each variable
-  // passenger1Name, passenger1Phone, passenger1NumberOfPassengers
-  // passenger1PickupAddressLine1, passenger1PickupAddressLine2
-  // passenger1DropoffAddressLine1, passenger1DropoffAddressLine2
-  // passenger2Name, passenger2Phone, passenger2NumberOfPassengers
-  // passenger2PickupAddressLine1, passenger2PickupAddressLine2
-  // passenger2DropoffAddressLine1, passenger2DropoffAddressLine2
-  // passenger3Name, passenger3Phone, passenger3NumberOfPassengers
-  // passenger3PickupAddressLine1, passenger3PickupAddressLine2
-  // passenger3DropoffAddressLine1, passenger3DropoffAddressLine2
-  
+  }
   //  👆 YOUR CODE ENDS HERE. DON'T CHANGE ANY OTHER CODE 👆
