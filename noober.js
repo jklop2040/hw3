@@ -8,9 +8,9 @@ function pageLoad() {
   // e.g. ask 'ride' for its length or only grab the first member of the Array
   console.log(ride)
 
-  if (ride[0].numberOfPassengers == 1 || ride.length > 1 ) {
+  if (ride.length > 1 && ride[0].numberOfPassengers == 1) {
     levelOfService = 'Noober Pool'
-  } else if (ride[0].purplerequested = true) {
+  } else if (ride[0].purpleRequested == true) {
     levelOfService = 'Noober Purple'
   } else if (ride[0].numberOfPassengers > 3) {
     levelOfService = 'Noober XL'
