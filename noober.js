@@ -8,9 +8,12 @@ function pageLoad() {
   // e.g. ask 'ride' for its length or only grab the first member of the Array
   console.log(ride)
 
-  if (ride[0].numberOfPassengers == 1 || ride.length > 1 ) {levelOfService = 'Noober Pool'
-  } else if (ride.purplerequested = true) {levelOfService = 'Noober Purple'
-  } else if (ride[0].numberOfPassengers > 3) {levelOfService = 'Noober XL'
+  if (ride[0].numberOfPassengers == 1 || ride.length > 1 ) {
+    levelOfService = 'Noober Pool'
+  } else if (ride[0].purplerequested = true) {
+    levelOfService = 'Noober Purple'
+  } else if (ride[0].numberOfPassengers > 3) {
+    levelOfService = 'Noober XL'
   } else {levelOfService = 'Noober X'}
 
   console.log(levelOfService)
